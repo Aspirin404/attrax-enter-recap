@@ -67,6 +67,7 @@ export const site = {
       items: [
         { name: 'AttraX',                  primary: true },
         { name: 'Enter.pro' },
+        { name: 'Schwarzman College, Tsinghua University' },
         { name: 'Tsinghua SEM · CEMS' },
         { name: 'Yenching Academy · PKU' },
         { name: 'PKU Innovation Club' },
