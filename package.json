@@ -1,0 +1,13 @@
+{
+  "name": "attrax-enter-recap",
+  "version": "1.0.0",
+  "description": "AttraX × Enter × Tsinghua Vibe Coding Workshop Recap",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
