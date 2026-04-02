@@ -1,6 +1,8 @@
 // ============================================================
 //  CONTENT.JS — 所有可编辑内容都在这里
 //  改文案、改链接、改数据 → 只需修改这个文件
+//  注意：不要在字符串里写 HTML 标签
+//        高亮词用 [[词]] 包裹，main.js 会自动转成紫色
 // ============================================================
 
 export const site = {
@@ -15,15 +17,15 @@ export const site = {
 
   // ── Hero 区块 ─────────────────────────────────────────────
   hero: {
-    tag:      '✦ Event Recap',
-    title:    'We Brought <em>Vibe Coding</em> to Tsinghua.<br>The Room Went Wild.',
-    subtitle: 'A hands-on AI workshop that turned 79 students from 20+ countries into builders — in a single afternoon.',
+    tag:       '✦ Event Recap',
+    titleLine1: 'We Brought [[Vibe Coding]] to Tsinghua.',
+    titleLine2: 'The Room Went Wild.',
+    subtitle:  'A hands-on AI workshop that turned 79 students from 20+ countries into builders — in a single afternoon.',
     tags: [
-      { icon: '📍', label: '<strong>Tsinghua University</strong> · School of Economics & Management' },
-      { icon: '📅', label: '<strong>April 1, 2026</strong> · Beijing' },
-      { icon: '👥', label: '<strong>79 participants</strong> from 20+ countries' },
+      { icon: '📍', bold: 'Tsinghua University', rest: '· School of Economics & Management' },
+      { icon: '📅', bold: 'April 1, 2026',        rest: '· Beijing' },
+      { icon: '👥', bold: '79 participants',       rest: 'from 20+ countries' },
     ],
-    // Hero 图片（在 assets/ 目录）
     photos: [
       { file: 'assets/img_00.jpg', alt: 'Workshop session' },
       { file: 'assets/img_01.jpg', alt: 'Participants building' },
@@ -42,19 +44,19 @@ export const site = {
   // ── 活动概述 ──────────────────────────────────────────────
   overview: {
     tag:   '🗓 What Happened',
-    title: 'One Afternoon. Real <em>Products.</em>',
-    sub:   'AttraX and Enter brought vibe coding to one of China\'s top universities.',
+    title: 'One Afternoon. Real [[Products.]]',
+    sub:   "AttraX and Enter brought vibe coding to one of China's top universities.",
     body: [
       'The workshop challenged students to go from zero to deployed product — using AI as their co-founder, designer, and developer. No prior coding experience required.',
-      '<strong>The result?</strong> Twelve working prototypes, a room full of first-time builders, and a lot of people who'll never look at software the same way again.',
+      'The result? Twelve working prototypes, a room full of first-time builders, and a lot of people who will never look at software the same way again.',
     ],
-    quote: '"I shipped my first app in 40 minutes. I didn\'t even know what a deployment was this morning."',
+    quote: 'I shipped my first app in 40 minutes. I did not even know what a deployment was this morning.',
     agenda: {
       title: 'HOW THE DAY RAN',
       items: [
         { time: '2:00 PM', text: 'Doors open · Networking' },
         { time: '2:30 PM', text: 'Welcome from AttraX & Enter', primary: true },
-        { time: '3:00 PM', text: 'Live demo: zero → deployed in 10 min' },
+        { time: '3:00 PM', text: 'Live demo: zero to deployed in 10 min' },
         { time: '3:20 PM', text: 'Build sprint begins', primary: true },
         { time: '4:30 PM', text: 'Project showcase & peer review' },
         { time: '5:00 PM', text: 'Wrap-up & next steps', primary: true },
@@ -63,7 +65,7 @@ export const site = {
     sponsors: {
       title: 'CO-ORGANIZERS',
       items: [
-        { name: 'AttraX', primary: true },
+        { name: 'AttraX',                  primary: true },
         { name: 'Enter.pro' },
         { name: 'Tsinghua SEM · CEMS' },
         { name: 'Yenching Academy · PKU' },
@@ -76,62 +78,62 @@ export const site = {
   // ── 优秀项目展示 ──────────────────────────────────────────
   projects: {
     tag:   '🏆 Outstanding Projects',
-    title: 'What They <em>Built</em>',
+    title: 'What They [[Built]]',
     sub:   'Selected standouts from the build sprint. All shipped during the event.',
     items: [
       {
-        rank:    '🥇',
-        badge:   'Best Overall',
-        title:   'Campus Meal Planner',
-        team:    'Team Alpha',
-        desc:    'AI-powered weekly meal planner tailored for Tsinghua canteen options. Students input dietary preferences and get a full week plan with nutrition breakdown.',
-        tags:    ['AI', 'Nutrition', 'Campus Life'],
-        link:    'https://enter.pro',
+        rank:  '🥇',
+        badge: 'Best Overall',
+        title: 'Campus Meal Planner',
+        team:  'Team Alpha',
+        desc:  'AI-powered weekly meal planner tailored for Tsinghua canteen options. Students input dietary preferences and get a full week plan with nutrition breakdown.',
+        tags:  ['AI', 'Nutrition', 'Campus Life'],
+        link:  'https://enter.pro',
       },
       {
-        rank:    '🥈',
-        badge:   'Most Creative',
-        title:   'Language Exchange Matcher',
-        team:    'Team Babel',
-        desc:    'Matches international and Chinese students for language exchange based on schedules, learning goals, and personality. Built with Supabase backend.',
-        tags:    ['Social', 'Education', 'NLP'],
-        link:    'https://enter.pro',
+        rank:  '🥈',
+        badge: 'Most Creative',
+        title: 'Language Exchange Matcher',
+        team:  'Team Babel',
+        desc:  'Matches international and Chinese students for language exchange based on schedules, learning goals, and personality. Built with Supabase backend.',
+        tags:  ['Social', 'Education', 'NLP'],
+        link:  'https://enter.pro',
       },
       {
-        rank:    '🥉',
-        badge:   'Best UX',
-        title:   'Event Discovery App',
-        team:    'Team Compass',
-        desc:    'Aggregates student events across Tsinghua, PKU, and surrounding universities into one clean feed. Filter by interest, language, and time.',
-        tags:    ['Events', 'Community', 'Aggregator'],
-        link:    'https://enter.pro',
+        rank:  '🥉',
+        badge: 'Best UX',
+        title: 'Event Discovery App',
+        team:  'Team Compass',
+        desc:  'Aggregates student events across Tsinghua, PKU, and surrounding universities into one clean feed. Filter by interest, language, and time.',
+        tags:  ['Events', 'Community', 'Aggregator'],
+        link:  'https://enter.pro',
       },
       {
-        rank:    '⭐',
-        badge:   'Audience Favorite',
-        title:   'AI Study Buddy',
-        team:    'Team Spark',
-        desc:    'A Socratic AI tutor that never gives direct answers — it asks guiding questions to help students reason through problems themselves.',
-        tags:    ['EdTech', 'AI Tutor', 'Learning'],
-        link:    'https://enter.pro',
+        rank:  '⭐',
+        badge: 'Audience Favorite',
+        title: 'AI Study Buddy',
+        team:  'Team Spark',
+        desc:  'A Socratic AI tutor that never gives direct answers — it asks guiding questions to help students reason through problems themselves.',
+        tags:  ['EdTech', 'AI Tutor', 'Learning'],
+        link:  'https://enter.pro',
       },
       {
-        rank:    '⭐',
-        badge:   'Most Practical',
-        title:   'Thesis Citation Helper',
-        team:    'Team Scholar',
-        desc:    'Paste any paragraph, get properly formatted citations. Supports APA, MLA, Chicago. Built for international students navigating citation styles.',
-        tags:    ['Academic', 'Writing', 'Productivity'],
-        link:    'https://enter.pro',
+        rank:  '⭐',
+        badge: 'Most Practical',
+        title: 'Thesis Citation Helper',
+        team:  'Team Scholar',
+        desc:  'Paste any paragraph, get properly formatted citations. Supports APA, MLA, Chicago. Built for international students navigating citation styles.',
+        tags:  ['Academic', 'Writing', 'Productivity'],
+        link:  'https://enter.pro',
       },
       {
-        rank:    '⭐',
-        badge:   'Best Pitch',
-        title:   'Dorm Room Marketplace',
-        team:    'Team Exchange',
-        desc:    'Buy/sell secondhand items within verified campus communities. Trust layer built on student ID verification and peer ratings.',
-        tags:    ['Marketplace', 'Campus', 'P2P'],
-        link:    'https://enter.pro',
+        rank:  '⭐',
+        badge: 'Best Pitch',
+        title: 'Dorm Room Marketplace',
+        team:  'Team Exchange',
+        desc:  'Buy/sell secondhand items within verified campus communities. Trust layer built on student ID verification and peer ratings.',
+        tags:  ['Marketplace', 'Campus', 'P2P'],
+        link:  'https://enter.pro',
       },
     ],
   },
@@ -139,7 +141,7 @@ export const site = {
   // ── 参与者 ────────────────────────────────────────────────
   participants: {
     tag:   '🌏 Who Was in the Room',
-    title: 'Global Minds. <em>One Campus.</em>',
+    title: 'Global Minds. [[One Campus.]]',
     sub:   '79 participants from across the world — united by curiosity and the will to build.',
     stats: [
       { number: '79',  label: 'Total Participants' },
@@ -153,22 +155,22 @@ export const site = {
   // ── 现场照片 ──────────────────────────────────────────────
   gallery: {
     tag:   '📸 On the Ground',
-    title: 'In the <em>Room</em>',
+    title: 'In the [[Room]]',
     photos: [
-      { file: 'assets/img_03.jpg', alt: 'Full room',    size: 'large' },
-      { file: 'assets/img_04.jpg', alt: 'Keynote',      size: 'normal' },
-      { file: 'assets/img_05.jpg', alt: 'Networking',   size: 'normal' },
-      { file: 'assets/img_06.jpg', alt: 'Team photo',   size: 'tall' },
-      { file: 'assets/img_07.jpg', alt: 'Presenter',    size: 'normal' },
+      { file: 'assets/img_03.jpg', alt: 'Full room',  size: 'large' },
+      { file: 'assets/img_04.jpg', alt: 'Keynote',    size: 'normal' },
+      { file: 'assets/img_05.jpg', alt: 'Networking', size: 'normal' },
+      { file: 'assets/img_06.jpg', alt: 'Team photo', size: 'tall' },
+      { file: 'assets/img_07.jpg', alt: 'Presenter',  size: 'normal' },
     ],
     albumLink: 'https://lcn09aufxjsv.feishu.cn/wiki/QcMKwiTL1iRg5qkZSl5cpE0EnBn',
   },
 
   // ── CTA / 结尾 ────────────────────────────────────────────
   cta: {
-    eyebrow: 'We\'re Just Getting Started',
-    title:   'Tsinghua Was <em>One Stop.</em>',
-    body:    'Want the AttraX × Enter team at your campus? We\'ll bring the energy. You bring the ideas.',
+    eyebrow: "We're Just Getting Started",
+    title:   'Tsinghua Was [[One Stop.]]',
+    body:    "Want the AttraX × Enter team at your campus? We'll bring the energy. You bring the ideas.",
     buttons: [
       { text: 'Start Building Free →', link: 'https://enter.pro', style: 'white' },
       { text: 'Invite Us to Your Event', link: 'https://enter.pro', style: 'outline' },
