@@ -75,6 +75,8 @@
     .wms{display:flex;gap:5px}
     .wcr{background:#fef3c7;color:#92400e;padding:2px 7px;border-radius:100px;font-size:10px;font-weight:700}
     .wss{background:#dcfce7;color:#166534;padding:2px 7px;border-radius:100px;font-size:10px;font-weight:700}
+    .metrics-legend{display:flex;gap:20px;justify-content:center;padding:16px;background:var(--g50);border-radius:12px;margin:24px 0;font-size:13px;color:var(--g600)}
+    .metrics-legend .legend-item{display:flex;align-items:center;gap:6px}
     .fc h3{font-size:16px;font-weight:800;margin-bottom:7px;line-height:1.3}
     .fc p{font-size:13px;color:var(--g600);line-height:1.6;margin-bottom:10px}
     .fb{display:flex;flex-direction:column;gap:3px}
