@@ -20,11 +20,11 @@ export const site = {
     tag:       '✦ Event Recap',
     titleLine1: 'We Brought [[Vibe Coding]] to Tsinghua.',
     titleLine2: 'The Room Went Wild.',
-    subtitle:  'A hands-on AI workshop that turned 79 students from 20+ countries into builders — in a single afternoon.',
+    subtitle:  'A hands-on AI workshop that turned 79 students from 30+ countries into builders — in a single afternoon.',
     tags: [
       { icon: '📍', bold: 'Tsinghua University', rest: '· School of Economics & Management' },
       { icon: '📅', bold: 'April 1, 2026',        rest: '· Beijing' },
-      { icon: '👥', bold: '79 participants',       rest: 'from 20+ countries' },
+      { icon: '👥', bold: '79 participants',       rest: 'from 30+ countries' },
     ],
     photos: [
       { file: '/assets/img_00.jpg', alt: 'Workshop session' },
@@ -36,7 +36,7 @@ export const site = {
   // ── 数据统计 ──────────────────────────────────────────────
   stats: [
     { number: '79',  suffix: '',  label: 'Participants' },
-    { number: '20',  suffix: '+', label: 'Countries' },
+    { number: '30',  suffix: '+', label: 'Countries' },
     { number: '12',  suffix: '',  label: 'Projects Built' },
     { number: '1',   suffix: '',  label: 'Afternoon' },
   ],
@@ -145,7 +145,7 @@ export const site = {
     sub:   '79 participants from across the world — united by curiosity and the will to build.',
     stats: [
       { number: '79',  label: 'Total Participants' },
-      { number: '20+', label: 'Countries Represented' },
+      { number: '30+', label: 'Countries Represented' },
       { number: '6',   label: 'Universities' },
     ],
     programs: ['CEMS MIM', 'MBA', 'PhD', 'Exchange Students', 'Undergrad'],
