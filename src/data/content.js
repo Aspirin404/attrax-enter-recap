@@ -170,10 +170,10 @@ export const site = {
   cta: {
     eyebrow: "We're Just Getting Started",
     title:   'Tsinghua Was [[One Stop.]]',
-    body:    "Want the AttraX × Enter team at your campus? We'll bring the energy. You bring the ideas.",
+    body:    "Want the Enter team at your campus? We'll bring the energy. You bring the ideas.",
     buttons: [
       { text: 'Start Building Free →', link: 'https://enter.pro', style: 'white' },
-      { text: 'Invite Us to Your Event', link: 'https://enter.pro', style: 'outline' },
+      { text: 'Invite Us to Your Event', link: 'mailto:support@enter.pro', style: 'outline' },
     ],
   },
 
