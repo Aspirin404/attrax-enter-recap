@@ -1,6 +1,7 @@
 {
   "name": "attrax-enter-recap",
   "version": "1.0.0",
+  "type": "module",
   "description": "AttraX × Enter × Tsinghua Vibe Coding Workshop Recap",
   "scripts": {
     "dev": "vite",
