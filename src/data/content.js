@@ -69,7 +69,7 @@ export const site = {
         { name: 'Enter.pro' },
         { name: 'Tsinghua SEM · CEMS' },
         { name: 'Yenching Academy · PKU' },
-        { name: 'PKU Innovation Society' },
+        { name: 'PKU Innovation Club' },
         { name: '创新壬 (Ren)' },
       ],
     },
