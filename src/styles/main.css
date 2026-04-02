@@ -127,7 +127,7 @@
     .gi{border-radius:12px;overflow:hidden;position:relative}
     .gi.large{grid-column:span 2;grid-row:span 2}
     .gi.tall{grid-row:span 2}
-    .gi img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;position:absolute;top:0;left:0}
+    .gi img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;position:absolute;top:0;left:0}
     .glink{text-align:center;margin-top:14px;font-size:13px;color:var(--g400)}
     .glink a{color:var(--purple);font-weight:600;text-decoration:none}
     .pct{border-top:1px solid var(--border)}
