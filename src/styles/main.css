@@ -49,7 +49,7 @@
     .olist{display:flex;flex-direction:column;gap:7px}
     .or{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--g600);font-weight:500}
     .od{width:5px;height:5px;border-radius:50%;background:var(--purple);flex-shrink:0}
-    .or.primary{color:var(--black);font-weight:700}
+    .or.primary{color:var(--black)}
     .flist{display:flex;flex-direction:column}
     .fi{display:flex;gap:12px;padding-bottom:12px}
     .fi:last-child{padding-bottom:0}

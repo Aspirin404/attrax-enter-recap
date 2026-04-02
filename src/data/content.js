@@ -71,7 +71,7 @@ export const site = {
         { name: 'Tsinghua SEM · CEMS' },
         { name: 'Yenching Academy · PKU' },
         { name: 'PKU Innovation Club' },
-        { name: '创新壬 (Ren)' },
+        { name: 'REN' },
       ],
     },
   },
