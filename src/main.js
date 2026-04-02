@@ -5,7 +5,7 @@
 // ============================================================
 
 import './styles/main.css'
-import { site } from './data/content.js'
+import { site } from './data/content.jsx'
 
 // ── Nav ──────────────────────────────────────────────────────
 document.querySelector('.nav-logo').innerHTML = site.nav.logo.replace('×', '<span>×</span>')
